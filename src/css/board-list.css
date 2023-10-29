@@ -1,0 +1,23 @@
+.board-section,.board-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board-container{
+    width: 60vw;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.form-container>div{
+    margin: 0 1rem;;
+}
+
+.board-list-title{
+    font-weight: 700;
+}

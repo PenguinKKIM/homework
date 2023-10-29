@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import './css/style.css';
+
+import {BrowserRouter, Routes , Route} from 'react-router-dom';
+
+import ReactBoard from './component/ReactBoard';
+import KostaNavBar from './component/KostaNavBar';
+import ReactBoardMain from './component/ReactBoardMain';
+import BoardForm from './component/BoardForm';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+				<KostaNavBar />
+				<Routes>
+					<Route path="/" element={<ReactBoardMain />}></Route>
+					<Route path="/reactboard" element={<ReactBoard />}></Route>
+					<Route path="/boardform" element={<BoardForm />}></Route>
+				</Routes>
+			</BrowserRouter>
     </div>
   );
 }

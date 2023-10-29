@@ -1,0 +1,20 @@
+.board-form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.board-form-container{
+    width: 40%;
+    border: 1px solid rgb(125, 125, 125);
+    padding: 1rem;
+}
+
+.context{
+    height: 10rem;
+}
+
+.form-btn{
+    margin: .5rem;
+}
